@@ -1,0 +1,115 @@
+/* fonts */
+@import url(https://fonts.google.com/specimen/Lexend+Deca);
+@import url(https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap);
+
+:root {
+    --color1: #e38826;
+    --color2: #006970;
+    --color3: #004241;
+    --text_color: rgba(255, 255, 255, 0.75);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.5em;
+    font-size: 15px;
+    
+    font-weight: 300;
+    color: var(--text_color);
+}
+
+/* globel style */
+
+body {
+    background-color: #f9f9f9;
+}
+
+h3 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 28px;
+    line-height: 1.2em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.big-box {
+    display: flex;
+    margin: 150px 0;
+    justify-content: center;
+    position: relative;
+}
+
+.col {
+    width: 25%;
+    padding: 40px;
+    position: relative;
+}
+
+#col-1 {
+    background-color: var(--color1);
+    border-radius: 10px 0 0 10px;
+}
+
+#col-2 {
+    background-color: var(--color2);
+}
+
+#col-3 {
+    background-color: var(--color3);
+    border-radius: 0 10px 10px 0;
+}
+.col:hover{opacity: 0.8;}
+.col img{
+    margin-bottom: 40px;}
+.button{
+    text-decoration: none;
+    outline: none;
+    border: 2px solid #fff;
+    width: 120px;
+    display: inline-block;
+    text-align: center;
+    line-height: 1.5;
+    padding: 10px 8px;
+    margin-top: 40px;
+    border-radius: 30px;
+    background-color: #fff;
+    color: transparent;
+    cursor: pointer;
+}
+#button1{color: var(--color1);}
+#button2{color: var(--color2);}
+#button3{color: var(--color3);}
+
+.button:hover{
+    background-color: transparent;
+}
+#button1:hover, #button2:hover, #button3:hover{color: #fff; transition: 2ms;}
+
+
+/* media-queries for the desktop */
+@media screen and (min-width:1440px) {}
+
+@media screen and (max-width:600px) and (min-width: 375px) {
+    html {
+        padding: 20px
+    }
+
+    .big-box {
+        flex-direction: column;
+    }
+
+    .col {
+        width: 100%;
+    }
+    #col-1 {
+        border-radius: 10px 10px 0 0;
+    }
+    #col-3 {
+        border-radius: 0 0 10px 10px;
+    }
+}
