@@ -17,7 +17,6 @@
     font-family: 'Lexend Deca', sans-serif;
     line-height: 1.5em;
     font-size: 15px;
-    
     font-weight: 300;
     color: var(--text_color);
 }
@@ -42,6 +41,7 @@ h3 {
     margin: 150px 0;
     justify-content: center;
     position: relative;
+    padding:5%;
 }
 
 .col {
